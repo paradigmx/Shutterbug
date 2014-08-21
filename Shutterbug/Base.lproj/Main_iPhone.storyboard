@@ -47,6 +47,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Shutterbug" id="xON-JN-CKV"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="y1K-Pt-P3I">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="fetchPhotos" destination="MX8-yb-85G" eventType="valueChanged" id="fh9-FM-Ibw"/>
+                        </connections>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yxj-jv-P8o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
