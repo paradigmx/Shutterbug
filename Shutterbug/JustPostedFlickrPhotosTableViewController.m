@@ -7,6 +7,7 @@
 //
 
 #import "JustPostedFlickrPhotosTableViewController.h"
+#import "FlickrFetcher.h"
 
 @interface JustPostedFlickrPhotosTableViewController ()
 
@@ -20,7 +21,15 @@
 }
 
 - (void)fetchPhotos {
-    self.photos = nil;
+    NSURL *url = [FlickrFetcher URLforRecentGeoreferencedPhotos];
+#warning Blocked main queue
+    NSData *jsonResult = [NSData dataWithContentsOfURL:url];
+    NSDictionary *propertyListResult = [NSJSONSerialization JSONObjectWithData:jsonResult options:0 error:NULL];
+
+//    NSLog(@"Flickr results: %@", propertyListResult);
+    NSArray *photos = [propertyListResult valueForKeyPath:FLICKR_RESULTS_PHOTOS];
+
+    self.photos = photos;
 }
 
 @end

@@ -24,6 +24,8 @@
 		B501DA0E19A5DCE900C5F358 /* ShutterbugTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B501DA0D19A5DCE900C5F358 /* ShutterbugTests.m */; };
 		B501DA1919A5DD8700C5F358 /* FlickrPhotosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B501DA1819A5DD8700C5F358 /* FlickrPhotosTableViewController.m */; };
 		B501DA1C19A5E06900C5F358 /* JustPostedFlickrPhotosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B501DA1B19A5E06900C5F358 /* JustPostedFlickrPhotosTableViewController.m */; };
+		B501DA2119A5E30500C5F358 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B501DA2019A5E30500C5F358 /* FlickrFetcher.m */; };
+		B501DA2419A5E84500C5F358 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B501DA2319A5E84500C5F358 /* ImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,11 @@
 		B501DA1819A5DD8700C5F358 /* FlickrPhotosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotosTableViewController.m; sourceTree = "<group>"; };
 		B501DA1A19A5E06900C5F358 /* JustPostedFlickrPhotosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JustPostedFlickrPhotosTableViewController.h; sourceTree = "<group>"; };
 		B501DA1B19A5E06900C5F358 /* JustPostedFlickrPhotosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JustPostedFlickrPhotosTableViewController.m; sourceTree = "<group>"; };
+		B501DA1E19A5E30500C5F358 /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
+		B501DA1F19A5E30500C5F358 /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
+		B501DA2019A5E30500C5F358 /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
+		B501DA2219A5E84500C5F358 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		B501DA2319A5E84500C5F358 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +97,7 @@
 		B501D9D319A5DCE900C5F358 = {
 			isa = PBXGroup;
 			children = (
+				B501DA1D19A5E30500C5F358 /* FlickrFetcher */,
 				B501D9E519A5DCE900C5F358 /* Shutterbug */,
 				B501DA0719A5DCE900C5F358 /* ShutterbugTests */,
 				B501D9DE19A5DCE900C5F358 /* Frameworks */,
@@ -124,6 +132,8 @@
 				B501D9EF19A5DCE900C5F358 /* AppDelegate.m */,
 				B501D9F119A5DCE900C5F358 /* Main_iPhone.storyboard */,
 				B501D9F419A5DCE900C5F358 /* Main_iPad.storyboard */,
+				B501DA2219A5E84500C5F358 /* ImageViewController.h */,
+				B501DA2319A5E84500C5F358 /* ImageViewController.m */,
 				B501DA1719A5DD8700C5F358 /* FlickrPhotosTableViewController.h */,
 				B501DA1819A5DD8700C5F358 /* FlickrPhotosTableViewController.m */,
 				B501DA1A19A5E06900C5F358 /* JustPostedFlickrPhotosTableViewController.h */,
@@ -163,6 +173,16 @@
 				B501DA0A19A5DCE900C5F358 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B501DA1D19A5E30500C5F358 /* FlickrFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				B501DA1E19A5E30500C5F358 /* FlickrAPIKey.h */,
+				B501DA1F19A5E30500C5F358 /* FlickrFetcher.h */,
+				B501DA2019A5E30500C5F358 /* FlickrFetcher.m */,
+			);
+			path = FlickrFetcher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +287,8 @@
 				B501DA1919A5DD8700C5F358 /* FlickrPhotosTableViewController.m in Sources */,
 				B501D9F019A5DCE900C5F358 /* AppDelegate.m in Sources */,
 				B501DA1C19A5E06900C5F358 /* JustPostedFlickrPhotosTableViewController.m in Sources */,
+				B501DA2119A5E30500C5F358 /* FlickrFetcher.m in Sources */,
+				B501DA2419A5E84500C5F358 /* ImageViewController.m in Sources */,
 				B501D9EC19A5DCE900C5F358 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Shutterbug/Shutterbug-Prefix.pch";
 				INFOPLIST_FILE = "Shutterbug/Shutterbug-Info.plist";
@@ -415,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Shutterbug/Shutterbug-Prefix.pch";
 				INFOPLIST_FILE = "Shutterbug/Shutterbug-Info.plist";
