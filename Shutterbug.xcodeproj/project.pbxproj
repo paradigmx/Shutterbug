@@ -15,7 +15,6 @@
 		B501D9F019A5DCE900C5F358 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B501D9EF19A5DCE900C5F358 /* AppDelegate.m */; };
 		B501D9F319A5DCE900C5F358 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B501D9F119A5DCE900C5F358 /* Main_iPhone.storyboard */; };
 		B501D9F619A5DCE900C5F358 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B501D9F419A5DCE900C5F358 /* Main_iPad.storyboard */; };
-		B501D9F919A5DCE900C5F358 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B501D9F819A5DCE900C5F358 /* ViewController.m */; };
 		B501D9FB19A5DCE900C5F358 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B501D9FA19A5DCE900C5F358 /* Images.xcassets */; };
 		B501DA0219A5DCE900C5F358 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B501DA0119A5DCE900C5F358 /* XCTest.framework */; };
 		B501DA0319A5DCE900C5F358 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B501D9DF19A5DCE900C5F358 /* Foundation.framework */; };
@@ -51,8 +50,6 @@
 		B501D9EF19A5DCE900C5F358 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B501D9F219A5DCE900C5F358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		B501D9F519A5DCE900C5F358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		B501D9F719A5DCE900C5F358 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B501D9F819A5DCE900C5F358 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B501D9FA19A5DCE900C5F358 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B501DA0019A5DCE900C5F358 /* ShutterbugTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShutterbugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B501DA0119A5DCE900C5F358 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -138,8 +135,6 @@
 				B501DA1819A5DD8700C5F358 /* FlickrPhotosTableViewController.m */,
 				B501DA1A19A5E06900C5F358 /* JustPostedFlickrPhotosTableViewController.h */,
 				B501DA1B19A5E06900C5F358 /* JustPostedFlickrPhotosTableViewController.m */,
-				B501D9F719A5DCE900C5F358 /* ViewController.h */,
-				B501D9F819A5DCE900C5F358 /* ViewController.m */,
 				B501D9FA19A5DCE900C5F358 /* Images.xcassets */,
 				B501D9E619A5DCE900C5F358 /* Supporting Files */,
 			);
@@ -283,7 +278,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B501D9F919A5DCE900C5F358 /* ViewController.m in Sources */,
 				B501DA1919A5DD8700C5F358 /* FlickrPhotosTableViewController.m in Sources */,
 				B501D9F019A5DCE900C5F358 /* AppDelegate.m in Sources */,
 				B501DA1C19A5E06900C5F358 /* JustPostedFlickrPhotosTableViewController.m in Sources */,
@@ -506,6 +500,7 @@
 				B501DA1319A5DCE900C5F358 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B501DA1419A5DCE900C5F358 /* Build configuration list for PBXNativeTarget "ShutterbugTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +509,7 @@
 				B501DA1619A5DCE900C5F358 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
