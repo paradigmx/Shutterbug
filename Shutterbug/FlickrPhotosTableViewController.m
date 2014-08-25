@@ -16,6 +16,20 @@
 
 @implementation FlickrPhotosTableViewController
 
+- (void)awakeFromNib {
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(fetchPhotos) forControlEvents:UIControlEventValueChanged];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self fetchPhotos];
+}
+
+- (void)fetchPhotos {
+    // Should be implemented in subclasses
+}
+
 - (void)setPhotos:(NSArray *)photos {
     _photos = photos;
     [self.tableView reloadData];

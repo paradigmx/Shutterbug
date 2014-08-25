@@ -9,18 +9,9 @@
 #import "JustPostedFlickrPhotosTableViewController.h"
 #import "FlickrFetcher.h"
 
-@interface JustPostedFlickrPhotosTableViewController ()
-
-@end
-
 @implementation JustPostedFlickrPhotosTableViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self fetchPhotos];
-}
-
-- (IBAction)fetchPhotos {
+- (void)fetchPhotos {
     [self.refreshControl beginRefreshing];
 
     NSURL *url = [FlickrFetcher URLforRecentGeoreferencedPhotos];
